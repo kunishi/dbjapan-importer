@@ -1,0 +1,3 @@
+[submodule "mailarchiver-hugo"]
+	path = mailarchiver-hugo
+	url = git@github.com:kunishi/mailarchiver-hugo.git
