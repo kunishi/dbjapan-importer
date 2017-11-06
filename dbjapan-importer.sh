@@ -5,11 +5,11 @@ DBJAPAN_DIR=$HOME/git/dbjapan
 for year in `ls $DBJAPAN_DIR/20*.txt`; do
   for file in `cat $year`; do
     echo $file
-    ruby mailimporter.rb $DBJAPAN_DIR/$file
+    ruby mailarchiver-hugo/mailimporter.rb $DBJAPAN_DIR/$file
   done
 done
 
 for file in `ls $DBJAPAN_DIR/06_Dbjapan_mlmmj`; do
   echo $file
-  ruby mailimporter.rb $DBJAPAN_DIR/06_Dbjapan_mlmmj/$file
+  ruby mailarchiver-hugo/mailimporter.rb $DBJAPAN_DIR/06_Dbjapan_mlmmj/$file
 done
